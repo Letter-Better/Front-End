@@ -1,0 +1,13 @@
+@import url("../reset-css/reset.css");
+
+:root {
+    /* purple colors*/
+    --dark-purple: #2E0A4F;
+    /* gradients */
+    --home-gradient: linear-gradient(to bottom, #362752, #19092B 70% , #10001F);
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+}
