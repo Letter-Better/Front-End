@@ -3,8 +3,14 @@
 :root {
     /* purple colors*/
     --dark-purple: #2E0A4F;
+    --navy-blue: #21133B;
+    --black: #000000;
+
     /* gradients */
     --home-gradient: linear-gradient(to bottom, #362752, #19092B 70% , #10001F);
+
+    /* shadow */
+    --navbar-shadow: -6px 8px 10px rgba(0, 0, 0, 0.4), 10px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .full-screen {
