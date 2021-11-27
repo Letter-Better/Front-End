@@ -28,7 +28,7 @@ body {
 /* ! -------------------------------- container ------------------------------- ! */
 .container {
     width: 80%;
-    max-width: 80%;
+    max-width: 1365px;
     margin-top: 70px;
 }
 /* ! --------------------------------- navbar --------------------------------- ! */
@@ -47,12 +47,12 @@ body {
     display: flex;
     height: 100%;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 11px;
 }
 .profile {
     width : 55px;
     height: 55px;
-    border-radius: 18px;
+    border-radius: 17px;
     overflow: hidden;
 }
 .profile img {
@@ -123,4 +123,88 @@ body {
 .nav-link-map {
     font-size: 1rem;
     stroke: var(--ice-white);
+}
+/* ! ---------------------------------- main ---------------------------------- ! */
+.main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+/* ! ------------------------------ left section ------------------------------ ! */
+.left-section {
+    width: 80%;
+}
+.left-section-title {
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 5px;
+}
+.left-section-title span {
+    color: var(--dark-purple3);
+    font-weight: bolder;
+}
+.left-section-boxes-wrap {
+    width: 88%;
+}
+/* ! ---------------------------- next mission box ---------------------------- ! */
+.next-mission-box {
+    height: 115px;
+    margin-top: 30px;
+    border-radius: 40px;
+    background: linear-gradient(to right bottom , #390E60, #4E2079);
+    box-shadow: var(--start-mission-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mission-desc-awards-title {
+    color: var(--gold);
+    font-size: 1.8rem;
+}
+.mission-desc-level {
+    margin-top: 12px;
+    color: var(--ice-white);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.green-circle {
+    width: 15px;
+    height: 15px;
+    background: var(--green);
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 17px;
+}
+.next-mission-buttons {
+    display: flex;
+}
+.next-mission-question-btn {
+    width : 43px;
+    height: 43px;
+    border-radius: 100%;
+    background: var(--dark-purple3);
+    border: 1px solid var(--dark-purple2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    fill: var(--gold);
+}
+.lets-go-btn {
+    margin-right: 20px;
+    border-radius: 50px;
+    padding: 0 30px;
+    font-size: 1rem;
+    background: var(--gold);
+    box-shadow: var(--lets-go-btn-shadow);
+    border: none;
+}
+/* ! ------------------------------ right section ----------------------------- ! */
+.right-section {
+    width: 40%;
 }
