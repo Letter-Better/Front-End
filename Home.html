@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letter Better</title>
     <link rel="stylesheet" href="public/content/css/Home.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- ! -------------------------- triangle-overlay -------------------------- ! -->
@@ -17,7 +18,48 @@
     <div class="container">
         <!-- ! ------------------------------- navbar -------------------------------- ! -->
         <nav class="navbar">
-
+            <!-- ! ---------------------------- user profile ----------------------------- ! -->
+            <div class="user-profile">
+                <!-- ! ------------------------------- profile ------------------------------- ! -->
+                <div class="profile">
+                    <img src="public/content/img/guest-profile/guest-profile.png" class="full-screen" alt="your profile">
+                </div>
+                <!-- ! ------------------------- profile description ------------------------- ! -->
+                <div class="profile-description">
+                   <h1 class="text-capitalize profile-desc-name">guest</h1>
+                   <h3 class="text-capitalize profile-desc-level">level 1</h3>
+                </div>
+            </div>
+            <!-- ! ----------------------------- navbar-nav ------------------------------ ! right icons -->
+            <div class="navbar-nav">
+                <ul class="nav-ul">
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-link-setting text-capitalize">
+                            setting 
+                            <svg id="user" xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 12 18">
+                                <path id="Path_1384" data-name="Path 1384" d="M16,7a4,4,0,1,1-4-4A4,4,0,0,1,16,7ZM14,7a2,2,0,1,1-2-2A2,2,0,0,1,14,7Z" transform="translate(-6 -3)" fill-rule="evenodd"/>
+                                <path id="Path_1385" data-name="Path 1385" d="M16,15a1,1,0,0,0-1-1H9a1,1,0,0,0-1,1v6H6V15a3,3,0,0,1,3-3h6a3,3,0,0,1,3,3v6H16Z" transform="translate(-6 -3)"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="nav-link nav-link-light-theme">
+                            <i class="bi bi-brightness-high"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-link-map">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.711" height="18.646" viewBox="0 0 24.711 22.646">
+                                <g id="Icon_feather-map" data-name="Icon feather-map" transform="translate(-0.5 -2)">
+                                  <path id="Path_1386" data-name="Path 1386" d="M1.5,7.129V23.646l7.226-4.129,8.259,4.129,7.226-4.129V3L16.985,7.129,8.726,3Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                  <path id="Path_1387" data-name="Path 1387" d="M12,3V19.517" transform="translate(-3.274)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                  <path id="Path_1388" data-name="Path 1388" d="M24,9V25.517" transform="translate(-7.015 -1.871)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 

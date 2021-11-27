@@ -1,19 +1,42 @@
 @import url("../reset-css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 :root {
     /* purple colors*/
     --dark-purple: #2E0A4F;
     --navy-blue: #21133B;
+    --minimal-light-navy-blue: #351156;
+    --light-navy-blue: #442364;
+
     --black: #000000;
+    
+    --lightB-purple: #BB00FF;
+    --minimal-purple8: #8720AD;
+    --minimal-purple7 : #7800A3;
+    
+    --gold: #FFC300;
+
+    --gray: #AFAFAF;
+    --white: #ffffff;
+    --ice-white: #EDF4F5;
 
     /* gradients */
     --home-gradient: linear-gradient(to bottom, #362752, #19092B 70% , #10001F);
 
     /* shadow */
-    --navbar-shadow: -6px 8px 10px rgba(0, 0, 0, 0.4), 10px 8px 10px rgba(0, 0, 0, 0.1);
+    --navbar-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+    --icons-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
 }
 
 .full-screen {
     width: 100%;
     height: 100%;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
 }

@@ -28,14 +28,99 @@ body {
 /* ! -------------------------------- container ------------------------------- ! */
 .container {
     width: 80%;
+    max-width: 80%;
     margin-top: 70px;
 }
 /* ! --------------------------------- navbar --------------------------------- ! */
 .navbar {
     width: 100%;
-    height: 80px;
+    height: 75px;
     border-radius: 25px;
     background: var(--navy-blue);
     border: var(--black) 1px solid;
     box-shadow: var(--navbar-shadow);
+    display: flex;
+    align-items: center;
+}
+/* ! ------------------------------ user profile ------------------------------ ! */
+.user-profile {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+.profile {
+    width : 55px;
+    height: 55px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.profile img {
+    object-fit: cover;
+}
+.profile-description {
+    margin-left: 13px;
+}
+.profile-desc-name, .profile-desc-level {
+    color: var(--lightB-purple);
+}
+.profile-desc-name {
+    font-size: 1.1rem;
+}
+.profile-desc-level {
+    font-size: 0.7rem;
+    margin-top: 7px;
+    color: var(--gray);
+}
+/* ! ------------------------------- navbar nav ------------------------------- ! */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 17px;
+    height: 100%;
+}
+.nav-ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav-item:not(:first-child) {
+    margin-right: 20px;
+}
+.nav-link-setting {
+    background: var(--minimal-purple7);
+    border: 1px solid var(--minimal-purple8);
+    padding: 5px 10px;
+    border-radius: 13px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--ice-white);
+    box-shadow: var(--icons-shadow);
+    fill: var(--ice-white);
+}
+.nav-link-setting svg {
+    margin-left: 5px;
+}
+.nav-link-light-theme, .nav-link-map {
+    background: var(--minimal-light-navy-blue);
+    border: 1px solid var(--light-navy-blue);
+    cursor: pointer;
+    box-shadow: var(--icons-shadow);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+.nav-link-light-theme {
+    font-size: 1.3rem;
+    color: var(--gold);
+}
+.nav-link-map {
+    font-size: 1rem;
+    stroke: var(--ice-white);
 }
