@@ -13,6 +13,7 @@
     
     --lightB-purple: #BB00FF;
     --minimal-purple8: #8720AD;
+    --minimal-purple5: #530073;
     --minimal-purple7 : #7800A3;
     --dark-purple3: #390E60;
     --dark-purple2: #2B084B;
@@ -27,12 +28,14 @@
 
     /* gradients */
     --home-gradient: linear-gradient(to bottom, #362752, #19092B 70% , #10001F);
+    --next-mission-gradient: linear-gradient(to right bottom , #390E60, #4E2079);
+    --online-gradient: linear-gradient(to right bottom , #9008D5, #7B00A8);
 
     /* shadow */
     --navbar-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
     --icons-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     --start-mission-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    --lets-go-btn-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    --lets-go-btn-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 html {

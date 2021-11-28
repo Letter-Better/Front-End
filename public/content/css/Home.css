@@ -133,7 +133,7 @@ body {
 }
 /* ! ------------------------------ left section ------------------------------ ! */
 .left-section {
-    width: 80%;
+    width: 90%;
 }
 .left-section-title {
     font-size: 2rem;
@@ -148,17 +148,19 @@ body {
     width: 88%;
 }
 /* ! ---------------------------- next mission box ---------------------------- ! */
-.next-mission-box {
+.next-mission-box, .online-box {
     height: 115px;
     margin-top: 30px;
     border-radius: 40px;
-    background: linear-gradient(to right bottom , #390E60, #4E2079);
     box-shadow: var(--start-mission-shadow);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+}
+.next-mission-box {
+    background: var(--next-mission-gradient);
 }
 .mission-desc-awards-title {
     color: var(--gold);
@@ -183,19 +185,21 @@ body {
 .next-mission-buttons {
     display: flex;
 }
-.next-mission-question-btn {
+.next-mission-question-btn, .online-question-btn {
     width : 43px;
     height: 43px;
     border-radius: 100%;
-    background: var(--dark-purple3);
-    border: 1px solid var(--dark-purple2);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     fill: var(--gold);
 }
-.lets-go-btn {
+.next-mission-question-btn {
+    background: var(--dark-purple3);
+    border: 1px solid var(--dark-purple2);
+}
+.lets-go-btn , .online-create-room-btn {
     margin-right: 20px;
     border-radius: 50px;
     padding: 0 30px;
@@ -203,6 +207,30 @@ body {
     background: var(--gold);
     box-shadow: var(--lets-go-btn-shadow);
     border: none;
+    cursor: pointer;
+}
+/* ! ------------------------------- online box ------------------------------- ! */
+.online-box {
+    background: var(--online-gradient);
+}
+.online-box h1 {
+    display: flex;
+    align-items: center;
+}
+.online-box div:first-child svg {
+    margin-right: 20px;
+    fill: var(--white);
+}
+.online-box span {
+    font-size: 2rem;
+    color: var(--white);
+}
+.online-question-btn {
+    background-color: var(--minimal-purple5);
+    border : 1px solid var(--dark-purple2);
+}
+.online-create-room-btn svg {
+    margin-left: 10px;
 }
 /* ! ------------------------------ right section ----------------------------- ! */
 .right-section {
