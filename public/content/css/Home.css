@@ -236,3 +236,77 @@ body {
 .right-section {
     width: 40%;
 }
+/* ! ------------------------------ players card ------------------------------ ! */
+.players-card {
+    width: 100%;
+    padding: 25px 0;
+    border-radius: 15px;
+    /* background: linear-gradient(to right bottom, var(--navy-blue) 50%, var(--dark-purple)); */
+    background: linear-gradient(to right bottom, var(--minimal-light-navy-blue) 30%, var(--dark-purple));
+    box-shadow: var(--icons-shadow);
+    border: 1px solid var(--black);
+}
+.players-card-title {
+    font-size: 1.7rem;
+    margin-left: 20px;
+    color: var(--ice-white);
+}
+.sort-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 20px 0 20px;
+}
+.sort-box h3 {
+    font-size: 1.3rem;
+    color: var(--ice-white);
+}
+.sort-dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.sort-dropdown-btn {
+    font-size: 1rem;
+    padding: 8px 25px;
+    background: var(--lightB-purple);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: var(--lets-go-btn-shadow);
+}
+.sort-dropdown-btn span:nth-child(2) {
+    margin-left: 5px;
+}
+.sort-dropdown-navigation {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--minimal-purple5);
+    box-shadow: var(--icons-shadow);
+    border: 1px solid var(--minimal-purple7);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.sort-dropdown-item {
+    padding: 10px;
+    color: var(--ice-white);
+    background: var(--minimal-purple5);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.sort-dropdown-item:not(:last-child) {
+    border-bottom: 1px solid var(--minimal-purple7);
+}
+.sort-dropdown-item:hover {
+    filter: brightness(120%);
+}
+.sort-dropdown-btn:focus ~ .sort-dropdown-navigation {
+    visibility: visible;
+    opacity: 1;
+}
