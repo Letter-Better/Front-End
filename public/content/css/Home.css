@@ -251,6 +251,7 @@ body {
     margin-left: 20px;
     color: var(--ice-white);
 }
+/* ! -------------------------------- sort box -------------------------------- ! */
 .sort-box {
     display: flex;
     justify-content: space-between;
@@ -268,12 +269,12 @@ body {
 }
 .sort-dropdown-btn {
     font-size: 1rem;
-    padding: 8px 25px;
+    padding: 10px 25px;
     background: var(--lightB-purple);
     border: none;
     color: var(--white);
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: var(--lets-go-btn-shadow);
 }
 .sort-dropdown-btn span:nth-child(2) {
@@ -292,6 +293,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    z-index: 9999;
 }
 .sort-dropdown-item {
     padding: 10px;
@@ -309,4 +311,73 @@ body {
 .sort-dropdown-btn:focus ~ .sort-dropdown-navigation {
     visibility: visible;
     opacity: 1;
+}
+/* ! ------------------------------- users wrap ------------------------------- ! */
+.users-wrap {
+    margin: 30px 20px 0 20px;
+    height: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.other-users-box {
+    width: 100%;
+    height: 60px;
+    background: var(--navy-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px 20px 60px 50px;
+    border: 1px solid var(--black);
+    position: relative;
+}
+.other-users-box:not(:first-child) {
+    margin-top: 20px;
+}
+.other-users-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    filter: blur(10px);
+    transform: translateY(15px);
+}
+.other-users-desc-box {
+    display: flex;
+}
+.other-users-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 5px;
+    filter: brightness(110%);
+}
+.other-users-profile img {
+    object-fit: cover;
+}
+.other-users-desc-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13px;
+}
+.other-users-desc-texts h1 {
+    font-size: 1rem;
+    color: var(--lightB-purple);
+    filter: brightness(120%);
+}
+.other-users-desc-texts h3 {
+    margin-top: 3px;
+    font-size: 0.8rem;
+    color: var(--gray);
+    filter: brightness(120%);
+}
+.other-users-more-info-box {
+    margin-right: 20px;
+    font-size: 2rem;
+    color: var(--ice-white);
+    cursor: pointer;
+    filter: brightness(120%);
 }
